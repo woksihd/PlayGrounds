@@ -6,10 +6,6 @@
   </head>
 
   <body>
-    <div id="example">
-    </div>
-    <div id="movie">
-    </div>
     <div id="commentNotes">
     </div>
 
@@ -22,56 +18,45 @@
 
         <script type="text/babel">
 
-            var Headline = React.createClass({
-              render: function(){
-                return (
-                  <div>
-                    <h1>This is going to be our React playground!</h1>
-                    <p>This is going to be some sample text!</p>
-                  </div>
-                );
-              }
-            });
-
-            var Movie = React.createClass({
-              render: function(){
-                return(
-                    <div>
-                      <h1>{this.props.title}</h1>
-                      <p>{this.props.genre}</p>
-                    </div>
-                  );
-              }
-            });
-
             var Comment = React.createClass({
-              edit: function(){
-                alert('You will be editing!');
+              getInitialState: function(){
+              return {
+                  comment: "First comment",
+                  isDisabled: true,
+                  saveBtn: "Edit"
+                };
+              },
+              toogleEdit: function(){
+                if(this.state.isDisabled === true){
+                  this.setState({ isDisabled: false, saveBtn: "Save"});
+                }
+                else {
+                  this.setState({ isDisabled: true, saveBtn: "Edit"});
+                }
               },
               remove: function(){
                 alert('You will be removing!');
               },
               render: function(){
                 return (
-                  <div className="commentContainer">
-                    <div className="commentText">
-                      {this.props.children}
-                    </div>
-                    <button onClick={this.edit} className="btn btn-info">Edit</button>
+                  <div className="well well-default">
+                    <textarea className="form-control commentText" disabled={this.state.isDisabled}>
+                      {this.state.comment}
+                    </textarea>
+                    <button onClick={this.toogleEdit} className="btn btn-info">{this.state.saveBtn}</button>
                     <button onClick={this.remove} className="btn btn-danger">Remove</button>
+                    <button className="btn btn-success pull-right">New comment!</button>
                   </div>
                 );
               }
             });
-
             ReactDOM.render(
-              <div className="well well-default">
-                <Comment>This is the first comment</Comment>
-                <Comment>This is the second comment</Comment>
-                <Comment>This is the third comment</Comment>
+              <div>
+                <Comment />
               </div>,
               document.getElementById('commentNotes')
             );
+
 
         </script>
 
