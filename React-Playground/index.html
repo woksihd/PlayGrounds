@@ -8,6 +8,11 @@
   <body>
     <div id="example">
     </div>
+    <div id="movie">
+    </div>
+    <div id="commentNotes">
+
+    </div>
 
 
 
@@ -15,16 +20,65 @@
 
 
     <footer>
+
         <script type="text/babel">
-        ReactDOM.render(
-          <h1>This is going to be our react playground</h1>,
-          document.getElementById('example')
-        );
+
+            var Headline = React.createClass({
+              render: function(){
+                return (
+                  <div>
+                    <h1>This is going to be our React playground!</h1>
+                    <p>This is going to be some sample text!</p>
+                  </div>
+                );
+              }
+            });
+
+            var Movie = React.createClass({
+              render: function(){
+                return(
+                    <div>
+                      <h1>{this.props.title}</h1>
+                      <p>{this.props.genre}</p>
+                    </div>
+                  );
+              }
+            });
+
+            var Comment = React.createClass({
+              edit: function(){
+                alert('You will be editing!');
+              },
+              remove: function(){
+                alert('You will be removing!');
+              },
+              render: function(){
+                return (
+                  <div className="commentContainer">
+                    <div className="commentText">
+                      {this.props.children}
+                    </div>
+                    <button onClick={this.edit} className="btn btn-info">Edit</button>
+                    <button onClick={this.remove} className="btn btn-danger">Remove</button>
+                  </div>
+                );
+              }
+            });
+
+            ReactDOM.render(
+              <div className="well well-default">
+                <Comment>This is the first comment</Comment>
+                <Comment>This is the second comment</Comment>
+                <Comment>This is the third comment</Comment>
+              </div>,
+              document.getElementById('commentNotes')
+            );
+
         </script>
+
         <script src="https://unpkg.com/react@15/dist/react.min.js"></script>
         <script src="https://unpkg.com/react-dom@15/dist/react-dom.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/react-bootstrap/0.30.8/react-bootstrap.min.js"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
     </footer>
   </body>
