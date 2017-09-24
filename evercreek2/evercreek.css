@@ -1,0 +1,248 @@
+body
+{
+  font-family: 'Open Sans',sans-serif !important;
+  font-weight: 300;
+  font-size: 15px;
+}
+p
+{
+  color: #a9a9a9;
+}
+.header-img
+{
+  min-height: 300px;
+  background: linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.35)),url(content/header-bg.jpg) #333 fixed no-repeat center;
+  background-size: cover;
+  color: #ddd;
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+.text-shadow
+{
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, .9);
+}
+.header-form
+{
+  background: #ebeaea;
+  border-radius: 3px;
+  color: #000;
+  opacity: 0.90;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+.header-form:hover,
+.header-form:focus,
+.header-form:active
+{
+  opacity: 0.95;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+.header-form-bottom
+{
+  background: #ddd;
+  color: gray;
+  padding: 10px;
+  margin-left: -15px;
+  margin-right: -15px;
+  border-radius: 0px 0px 3px 3px;
+  border-top: 1px solid #dadada;
+}
+.form-control
+{
+  margin-bottom: 10px;
+}
+.section-gray
+{
+  background: #f3f3f3;
+}
+.section-white
+{
+  background: #fff;
+}
+.section-dark
+{
+  background: #333;
+  color: #fff;
+}
+footer p,
+.section-dark p
+{
+  color: #999;
+}
+.section-call
+{
+/*  margin-top: 28px; */
+  margin-bottom: 20px;
+}
+.btn-red
+{
+  background: #f10a0a;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.15);
+  text-align: center;
+  padding: 7px 25px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: #ddd;
+}
+.btn-red:hover,
+.btn-red:active,
+.btn-red:focus
+{
+  background: #a71930;
+  color: #ddd;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+.product_row,
+.product_row .col-xs-12
+{
+  /*margin-top: 28px;
+  margin-bottom: 28px;*/
+}
+section
+{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.cta-col
+{
+  margin-top: 28px;
+  margin-bottom: 28px;
+}
+.cta-red
+{
+  color: #a71930;
+  text-decoration: none;
+  border-radius: 3px;
+  border: 2px solid #a71930;
+  font-weight: 600;
+  padding: 15px 22px;
+  text-decoration: none;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+.cta-red:hover,
+.cta-red:active,
+.cta-red:focus
+{
+  color: #f10a0a;
+  text-decoration: none;
+  border-radius: 3px;
+  border: 2px solid #f10a0a;
+  font-weight: 600;
+  padding: 15px 22px;
+  text-decoration: none;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+footer
+{
+  background: #282828;
+  color: #999;
+  font-weight: 300;
+  padding-top: 28px;
+}
+.disclaimer
+{
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+footer a
+{
+  text-decoration: none;
+  color: #999;
+}
+footer a:hover,
+footer a:focus,
+footer a:active
+{
+  text-decoration: none;
+  color: #eee;
+}
+strong
+{
+  font-weight: 600;
+}
+.quotes
+{
+  min-height: 300px;
+  background: linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.35)),url(content/quotesCar-bg.jpg) #333 fixed no-repeat bottom;
+  background-size: cover;
+  color: #ddd;
+}
+.carousel-control.right i
+{
+  float: right;
+  margin-top: 50%;
+  font-size: 36px;
+}
+.carousel-control.left i
+{
+  float: left;
+  margin-top: 50%;
+  font-size: 36px;
+}
+.modal-close
+{
+  position: relative;
+  top: -24px;
+  right: -24px;
+  float: right;
+  color: #a71930;
+  cursor: pointer;
+}
+.modal
+{
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.modal-content
+{
+  border-radius: 0px;
+  border: 0px;
+  top: 25%;
+  left: 25%;
+  padding: 28px;
+}
+.product-picture
+{
+  opacity: 1;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+.product-picture:hover,
+.product-picture:active,
+.product-picture:focus
+{
+  opacity: 0.7;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+@media (max-width: 767px){
+  .modal-content
+  {
+    top: 0;
+    left: 0;
+  }
+}
+.storyQuote
+{
+  font-size: 18px;
+  font-weight: 500;
+  font-style: italic;
+}

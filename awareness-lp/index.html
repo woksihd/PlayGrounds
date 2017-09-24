@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Awareness - Coming soon in 2018!</title>
+  <!-- ==== META ==== -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Awareness - A Jakab Krisztián project. Coming soon in 2018!">
+  <meta name="keywords" content="awareness">
+  <!-- ==== BOOTSTRAP & CSS ==== -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600,800" rel="stylesheet">
+  <link rel="stylesheet" href="awareness.css">
+  <!-- ==== CSS4CountDown ==== -->
+</head>
+<!-- ==== BODY ==== -->
+<body>
+  <!-- ==== CONTENT ==== -->
+  <div class="container">
+    <div class="ccounter" id="ccounter">
+      <input class="knob days" data-width="160" data-min="0" data-max="365" data-displayPrevious=true data-fgColor="#121212" data-readOnly="true" value="1">
+      <input class="knob hour" data-width="160" data-min="0" data-max="24" data-displayPrevious=true data-fgColor="#121212" data-readOnly="true" value="1">
+      <input class="knob minute" data-width="160" data-min="0" data-max="60" data-displayPrevious=true data-fgColor="#121212" data-readOnly="true" value="1">
+      <input class="knob second" data-width="160" data-min="0" data-max="60" data-displayPrevious=true data-fgColor="#121212" data-readOnly="true" value="0" data-bgcolor="#eee">
+    </div>
+  </div>
+
+
+  <!-- ==== FOOTER ==== -->
+  <footer>
+  </footer>
+  <!-- ==== SCRIPTS ==== -->
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+  <script src="js/jquery.knob.js"></script>
+  <script src="js/jquery.ccountdown.js"></script>
+  <script src="js/init.js"></script>
+  <script>
+    //enter the count down date using the format year, month, day, time:time
+    $("#ccounter").ccountdown(2018,07,21,'18:00');
+  </script>
+
+
+  <!-- GOOGLE WEB FONTS : begin -->
+  <script type="text/javascript">
+    var primary_font_code = 'Sintony:400,700:latin,latin-ext';
+    var secondary_font_code = 'Bree+Serif::latin,latin-ext';
+    var web_fonts = [primary_font_code];
+    if(secondary_font_code != ''){
+        web_fonts.push(secondary_font_code);
+    }
+
+    WebFontConfig = {
+        google: { families: web_fonts }
+    };
+    (function() {
+        var wf = document.createElement('script');
+        wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+        '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+        wf.type = 'text/javascript';
+        wf.async = 'true';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wf, s);
+    })();
+
+  </script>
+  <!-- GOOGLE WEB FONTS : end -->
+</body>
+</html>
