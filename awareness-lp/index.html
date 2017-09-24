@@ -10,27 +10,42 @@
   <meta name="keywords" content="awareness">
   <!-- ==== BOOTSTRAP & CSS ==== -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600,800" rel="stylesheet">
   <link rel="stylesheet" href="awareness.css">
-  <!-- ==== CSS4CountDown ==== -->
 </head>
 <!-- ==== BODY ==== -->
 <body>
+  <!-- ==== SPACER ==== -->
+  <div class="spacer">
+  </div>
   <!-- ==== CONTENT ==== -->
   <div class="container">
-    <div class="ccounter" id="ccounter">
-      <input class="knob days" data-width="160" data-min="0" data-max="365" data-displayPrevious=true data-fgColor="#121212" data-readOnly="true" value="1">
-      <input class="knob hour" data-width="160" data-min="0" data-max="24" data-displayPrevious=true data-fgColor="#121212" data-readOnly="true" value="1">
-      <input class="knob minute" data-width="160" data-min="0" data-max="60" data-displayPrevious=true data-fgColor="#121212" data-readOnly="true" value="1">
-      <input class="knob second" data-width="160" data-min="0" data-max="60" data-displayPrevious=true data-fgColor="#121212" data-readOnly="true" value="0" data-bgcolor="#eee">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3 text-shadow">
+        <h1 class="text-center" id="title">A<span>wareness<span></h1>
+        <hr id="h-line1">
+        <h5 class="text-center" id="sub-title">Coming soon in 2018!</h5>
+      </div>
+    </div>
+    <!-- ==== COUNTDOWN ==== -->
+    <div class="row">
+        <div class="ccounter text-center text-shadow" id="ccounter">
+          <input class="knob days" data-thickness=".1" data-skin="tron" data-width="120" data-min="0" data-max="365" data-displayPrevious=true data-fgColor="#fafafa" data-readOnly="true" value="1">
+          <input class="knob hour" data-thickness=".1" data-skin="tron" data-width="120" data-min="0" data-max="24" data-displayPrevious=true data-fgColor="#fafafa" data-readOnly="true" value="1">
+          <input class="knob minute" data-thickness=".1" data-skin="tron" data-width="120" data-min="0" data-max="60" data-displayPrevious=true data-fgColor="#fafafa" data-readOnly="true" value="1">
+          <input class="knob second" data-thickness=".1" data-skin="tron" data-width="120" data-min="0" data-max="60" data-displayPrevious=true data-fgColor="#fafafa" data-readOnly="true" value="0" data-bgcolor="#eee">
+        </div>
     </div>
   </div>
 
 
   <!-- ==== FOOTER ==== -->
   <footer>
+    <div class="col-md-4 col-md-push-4 text-center footer-content">
+      All rights reserved © 2017.
+  </div>
   </footer>
   <!-- ==== SCRIPTS ==== -->
 
@@ -38,9 +53,10 @@
   <script src="js/jquery.knob.js"></script>
   <script src="js/jquery.ccountdown.js"></script>
   <script src="js/init.js"></script>
+  <script src="js/awareness.js"></script>
   <script>
     //enter the count down date using the format year, month, day, time:time
-    $("#ccounter").ccountdown(2018,07,21,'18:00');
+    $("#ccounter").ccountdown(2018,12,21,'20:00');
   </script>
 
 

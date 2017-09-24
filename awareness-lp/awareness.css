@@ -1,4 +1,54 @@
 html, body
 {
   font-family: 'Raleway', sans-serif;
+  background: #121212;
+  height: 100%;
+  color: #fafafa;
+}
+body
+{
+  background: radial-gradient(rgba(39,0,66,0.3),rgba(49, 0, 48, 0.8)),url('media/background.jpg') center no-repeat;
+  background-size: cover;
+}
+.spacer
+{
+  min-height: 240px;
+  height: 40%;
+}
+.text-shadow
+{
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, .9);
+}
+.footer-content
+{
+  position: absolute;
+  bottom: 0px;
+  padding-bottom: 8px;
+  opacity: 0.5;
+}
+#title,
+#sub-title,
+#ccounter
+{
+  opacity: 0;
+  transition: all 3s ease-in-out;
+  letter-spacing: 32px;
+  text-transform: uppercase;
+}
+#title>span
+{
+  font-size: 0.75em;
+}
+#sub-title
+{
+  letter-spacing: 12px;
+}
+#h-line1
+{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border: 0;
+    border-top: 1px solid #fafafa;
+    opacity: 0;
+    transition: all 3s ease-in-out;
 }

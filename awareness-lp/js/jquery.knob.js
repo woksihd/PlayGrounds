@@ -575,15 +575,17 @@
                         ,'height' : ((this.o.width / 3) >> 0) + 'px'
                         ,'position' : 'absolute'
                         ,'vertical-align' : 'middle'
-                        ,'margin-top' : ((this.o.width / 3) >> 0) + 'px'
+                        ,'margin-top' : ((this.o.width / 3 - 2) >> 0) + 'px'
                         ,'margin-left' : '-' + ((this.o.width * 3 / 4 + 2) >> 0) + 'px'
                         ,'border' : 0
                         ,'background' : 'none'
-                        ,'font' : 'bold ' + ((this.o.width / s) >> 0) + 'px Arial'
+                        ,'font' : '300 ' + ((this.o.width / s) >> 0) + 'px Raleway'
                         ,'text-align' : 'center'
                         ,'color' : this.o.inputColor || this.o.fgColor
                         ,'padding' : '0px'
                         ,'-webkit-appearance': 'none'
+                        ,'text-transform': 'uppercase'
+                        ,'text-shadow':'1px 1px 0px #121212'
                         })
                 || this.i.css({
                         'width' : '0px'
